@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """
+0x02. Session authentication project
 Route module for the API
 """
 from api.v1.auth.auth import Auth
