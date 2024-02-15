@@ -4,7 +4,7 @@ Session Authentication for the API
 """
 from .auth import Auth
 from flask import request
-from model.user import User
+from models.user import User
 from uuid import uuid4
 
 
