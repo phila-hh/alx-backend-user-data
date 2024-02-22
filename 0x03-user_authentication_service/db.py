@@ -54,7 +54,7 @@ class DB:
             else:
                 raise InvalidRequestError()
         result = self._session.query(User).filter(
-            tuple_(*fields).in_([tuple(values)])
+            tuple_(*attrs).in_([tuple(vals)])
         ).first()
         if result is None:
             raise NoResultFound()
